@@ -335,3 +335,11 @@ h2{
     content: "\201D";
     font-size: 50px;
 }
+
+@media screen and (min-width: 768px) {
+    #testimonials .big-box .testimonials{
+        display: flex;
+        align-items: center;
+    }
+
+}
