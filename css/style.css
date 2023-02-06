@@ -50,6 +50,13 @@ utility body
 
 li{
     list-style-type: none;
+    text-align: center;
+}
+
+#button{
+    border: 1px solid;
+    border-radius: 20px;
+    padding: 10px 20px;
 }
 /*
 ++++++++++++++++++
@@ -60,6 +67,8 @@ header
 header{
     background-color: var(--blue);
     height: 75px;
+    color: white;
+    border-bottom: 1px blue;
 }
 
 header .content-cont{
@@ -75,5 +84,25 @@ header .content-cont{
 
 #dek-menu{
     display: none;
+    width: 50%;
 }
 
+header #dek-menu ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header #dek-menu ul li:last-child{
+    background-color: white;
+    color: black;
+}
+
+@media screen and (min-width: 992px) {
+    #dek-menu{
+        display: block;
+    }
+    .hamburger{
+        display: none;
+    }
+}
