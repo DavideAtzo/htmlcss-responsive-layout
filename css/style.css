@@ -136,7 +136,7 @@ jumbotron
 }
 .big-box,
 .box{
-    border: 1px solid red;
+    background-color: var(--light-blue);
     border-radius: 10px;
     margin: 10px auto;
     line-height: 1.5em;
@@ -150,8 +150,6 @@ jumbotron
 
 .big-box{
     width: 100%;
-    border: 1px solid;
-   
 }
 
 .big-box .box-img img{
@@ -165,10 +163,25 @@ jumbotron
     background-color: var(--blue);
 }
 
+#apple{
+    margin-right: 10px;
+}   
+
 #btn-box{
+    color: white;
     color: white;
 }
 
-#apple{
-    margin-right: 10px;
+#jumbotron p{
+    margin-bottom: 40px;
+}
+
+#jumbotron h2,
+#jumbotron .box i{
+    color: var(--blue);
+}
+
+.box i{
+    font-size: 75px;
+    padding-top: 30px;
 }
