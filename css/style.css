@@ -16,7 +16,7 @@ utility flex
 ++++++++++++++++++
 */
 
-.flex{
+/* .flex{
     display: flex;
 }
 
@@ -28,7 +28,7 @@ utility flex
 
 .wrap{
     flex-wrap: wrap;
-}
+} */
 
 /*
 ++++++++++++++++++
@@ -42,8 +42,15 @@ utility body
     padding-right: 1.25rem;
 }
 
+:root{
+    --blue: #0084fd;
+    --light-blue: #b5ddff;
+    --purple: #9792e4;
+}
 
-
+li{
+    list-style-type: none;
+}
 /*
 ++++++++++++++++++
 header
@@ -51,11 +58,22 @@ header
 */
 
 header{
-    background-color: #0084fd;
+    background-color: var(--blue);
     height: 75px;
 }
 
-
-header .container{
-    line-height: 75px;
+header .content-cont{
+    display: flex;
+    justify-content: space-between;
+    
 }
+
+#menu-header{
+    align-items: center;
+    height: 100%;
+}
+
+#dek-menu{
+    display: none;
+}
+
