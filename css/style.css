@@ -16,7 +16,7 @@ utility flex
 ++++++++++++++++++
 */
 
-/* .flex{
+.flex{
     display: flex;
 }
 
@@ -28,7 +28,7 @@ utility flex
 
 .wrap{
     flex-wrap: wrap;
-} */
+}
 
 /*
 ++++++++++++++++++
@@ -37,15 +37,19 @@ utility body
 */
 
 
-.container{
-    padding-left: 1.25rem;
-    padding-right: 1.25rem;
+.container-big{
+    max-width: 1140px;
+    margin: 0 auto;
 }
 
 :root{
     --blue: #0084fd;
     --light-blue: #b5ddff;
     --purple: #9792e4;
+}
+
+.row{
+    flex-direction: column;
 }
 
 li{
@@ -58,6 +62,11 @@ li{
     border-radius: 20px;
     padding: 10px 20px;
 }
+
+section:nth-child(even){
+    background-color: var(--purple);
+}
+
 /*
 ++++++++++++++++++
 header
@@ -71,15 +80,11 @@ header{
     border-bottom: 1px blue;
 }
 
-header .content-cont{
-    display: flex;
-    justify-content: space-between;
-    
-}
 
 #menu-header{
     align-items: center;
     height: 100%;
+    padding: 0 1.25rem;
 }
 
 #dek-menu{
@@ -105,4 +110,21 @@ header #dek-menu ul li:last-child{
     .hamburger{
         display: none;
     }
+}
+
+/*
+++++++++++++++++++
+jumbotron
+++++++++++++++++++
+*/
+#jumbotron{
+    padding: 0 1.25rem;
+}
+
+.box{
+    border: 1px solid red;
+    border-radius: 10px;
+    width: 100px;
+    height: 100px;
+    margin: 10px auto;
 }
