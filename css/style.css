@@ -4,7 +4,7 @@ reset
 ++++++++++++++++++
 */
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -16,11 +16,11 @@ utility flex
 ++++++++++++++++++
 */
 
-.flex{
+.flex {
     display: flex;
 }
 
-.space-b{
+.space-b {
     justify-content: space-between;
 }
 
@@ -32,52 +32,54 @@ utility body
 */
 
 #jumbotron,
-#strategic-planning{
+#strategic-planning {
     padding: 0 1.25rem;
 }
-.container-big{
+
+.container-big {
     max-width: 1140px;
     margin: 0 auto;
 }
 
-:root{
+:root {
     --blue: #0084fd;
     --light-blue: #b5ddff;
     --purple: #9792e4;
 }
 
-.row{
+.row {
     flex-direction: column;
 }
 
-li{
+li {
     list-style-type: none;
     text-align: center;
 }
 
-.button{
+.button {
     border-radius: 20px;
     padding: 10px 20px;
 }
 
-a{
+a {
     text-decoration: none;
 }
 
-section:nth-child(even){
+section:nth-child(even) {
     background-color: var(--purple);
 }
-img{
+
+img {
     display: block;
 }
 
-h2{
+h2 {
     margin: 40px 0;
     font-size: 28px;
 }
 
 #jumbotron,
-#strategic-planning{
+#strategic-planning {
     margin-top: 100px;
 }
 
@@ -87,7 +89,7 @@ header
 ++++++++++++++++++
 */
 
-header{
+header {
     background-color: var(--blue);
     height: 75px;
     color: white;
@@ -95,36 +97,37 @@ header{
 }
 
 
-#menu-header{
+#menu-header {
     align-items: center;
     height: 100%;
     padding: 0 1.25rem;
 }
 
-#dek-menu{
+#dek-menu {
     display: none;
     width: 50%;
 }
 
-header #dek-menu ul{
+header #dek-menu ul {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-header #dek-menu ul li:last-child{
+header #dek-menu ul li:last-child {
     background-color: white;
 }
 
-#btn-menu{
+#btn-menu {
     color: black;
 }
 
 @media screen and (min-width: 992px) {
-    #dek-menu{
+    #dek-menu {
         display: block;
     }
-    .hamburger{
+
+    .hamburger {
         display: none;
     }
 }
@@ -137,14 +140,14 @@ jumbotron
 
 
 .big-box,
-.box{
+.box {
     border-radius: 10px;
     line-height: 1.5em;
     padding: 0 30px 0 30px;
 }
 
 #jumbotron .big-box,
-#jumbotron .box{
+#jumbotron .box {
     background-color: var(--light-blue);
     border-radius: 10px;
     line-height: 1.5em;
@@ -153,73 +156,77 @@ jumbotron
 
 }
 
-.box{
+.box {
     text-align: center;
 }
 
-.big-box{
+#jumbotron .big-box {
     width: 100%;
 }
 
-.big-box .box-img img{
+.big-box .box-img img {
     width: 100%;
-   margin-top: 40px;
+    margin-top: 40px;
 }
 
-.button-box{
+.button-box {
     margin: 40px 5px;
     background-color: var(--blue);
     padding: 10px 50px;
 }
 
-#apple{
+#apple {
     margin-right: 10px;
-}   
+}
 
-#btn-box{
+#btn-box {
     color: white;
 }
 
-p{
+p {
     margin-bottom: 40px;
 }
 
 #jumbotron h2,
-#jumbotron .box i{
+#jumbotron .box i {
     color: var(--blue);
 }
 
-.box i{
+.box i {
     font-size: 75px;
     padding-top: 30px;
 }
 
 @media screen and (min-width: 768px) {
-    #jumbotron .row{
+    #jumbotron .row {
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-between;
     }
-    #jumbotron .box{    
+
+    #jumbotron .box {
         width: calc(100% / 3 - 30px);
         margin: 15px 15px;
 
     }
-    #jumbotron .big-box{
+
+    #jumbotron .big-box {
         width: calc((100% / 3)* 2 - 30px);
         margin: 15px 15px;
     }
+
     #jumbotron .big-box .box-img,
-    #jumbotron .big-box .box-text{
+    #jumbotron .big-box .box-text {
         width: 50%;
     }
-    
+
 }
 
 
 @media screen and (min-width: 992px) {
-    .big-box .box-img,
-    .big-box{
+
+    #jumbotron .big-box .box-img,
+    #jumbotron .big-box {
         display: flex;
     }
 }
@@ -230,19 +237,45 @@ strategic planning
 ++++++++++++++++++
 */
 
-#strategic-planning .container-big .big-box:first-child{
+#strategic-planning .container-big .big-box:first-child {
     color: white;
 }
 
-#strategic-planning .container-big .big-box:last-child{
+#strategic-planning .container-big .big-box:last-child {
     background-color: white;
     text-align: center;
-    border-radius: 30px;
+    border-radius: 70px;
 }
 
-#strategic-planning .container-big .big-box .box-text i{
+#strategic-planning .container-big .big-box .box-text i {
     background-color: var(--purple);
     padding: 17px 20px;
     border-radius: 50%;
     margin-bottom: 20px;
+}
+
+
+
+
+@media screen and (min-width: 992px) {
+    #strategic-planning .row{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    #strategic-planning .container-big .big-box {
+        width: calc(100% / 2);
+    }
+    #strategic-planning .container-big .big-box:first-child .box-img{
+        padding-top: 100px;
+        padding-bottom: 140px;
+    }
+    #strategic-planning .container-big .big-box:last-child{
+        margin-top: 350px;
+    }
+    #strategic-planning .container-big .big-box:last-child .box-img p{
+        font-style: oblique;
+    }
+
+
 }
