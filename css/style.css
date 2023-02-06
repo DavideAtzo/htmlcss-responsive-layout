@@ -36,7 +36,11 @@ utility body
 ++++++++++++++++++
 */
 
-
+#jumbotron,
+#strategic-planning{
+    padding: 0 1.25rem;
+    padding-top: 40px;
+}
 .container-big{
     max-width: 1140px;
     margin: 0 auto;
@@ -130,12 +134,17 @@ header #dek-menu ul li:last-child{
 jumbotron
 ++++++++++++++++++
 */
-#jumbotron{
-    padding: 0 1.25rem;
-    padding-top: 40px;
-}
+
 .big-box,
 .box{
+    border-radius: 10px;
+    margin: 10px auto;
+    line-height: 1.5em;
+    padding: 0 30px 0 30px;
+}
+
+#jumbotron .big-box,
+#jumbotron .box{
     background-color: var(--light-blue);
     border-radius: 10px;
     margin: 10px auto;
@@ -172,7 +181,7 @@ jumbotron
     color: white;
 }
 
-#jumbotron p{
+p{
     margin-bottom: 40px;
 }
 
@@ -184,4 +193,26 @@ jumbotron
 .box i{
     font-size: 75px;
     padding-top: 30px;
+}
+/*
+++++++++++++++++++
+strategic planning
+++++++++++++++++++
+*/
+
+#strategic-planning .container-big .big-box:first-child{
+    color: white;
+}
+
+#strategic-planning .container-big .big-box:last-child{
+    background-color: white;
+    text-align: center;
+    border-radius: 30px;
+}
+
+#strategic-planning .container-big .big-box .box-text i{
+    background-color: var(--purple);
+    padding: 17px 20px;
+    border-radius: 50%;
+    margin-bottom: 20px;
 }
