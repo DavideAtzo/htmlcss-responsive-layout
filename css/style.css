@@ -1,0 +1,49 @@
+/*
+++++++++++++++++++
+reset
+++++++++++++++++++
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*
+++++++++++++++++++
+utility flex
+++++++++++++++++++
+*/
+
+.flex{
+    display: flex;
+}
+
+.space-b{
+    justify-content: space-between;
+}
+
+.wrap{
+    flex-wrap: wrap;
+}
+
+/*
+++++++++++++++++++
+utility body
+++++++++++++++++++
+*/
+
+
+.container{
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+}
+
+
+
+/*
+++++++++++++++++++
+header
+++++++++++++++++++
+*/
