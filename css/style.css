@@ -25,11 +25,6 @@ utility flex
 }
 
 
-
-.wrap{
-    flex-wrap: wrap;
-}
-
 /*
 ++++++++++++++++++
 utility body
@@ -39,7 +34,6 @@ utility body
 #jumbotron,
 #strategic-planning{
     padding: 0 1.25rem;
-    padding-top: 40px;
 }
 .container-big{
     max-width: 1140px;
@@ -81,6 +75,12 @@ h2{
     margin: 40px 0;
     font-size: 28px;
 }
+
+#jumbotron,
+#strategic-planning{
+    margin-top: 100px;
+}
+
 /*
 ++++++++++++++++++
 header
@@ -108,7 +108,7 @@ header{
 
 header #dek-menu ul{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -135,10 +135,10 @@ jumbotron
 ++++++++++++++++++
 */
 
+
 .big-box,
 .box{
     border-radius: 10px;
-    margin: 10px auto;
     line-height: 1.5em;
     padding: 0 30px 0 30px;
 }
@@ -147,9 +147,9 @@ jumbotron
 #jumbotron .box{
     background-color: var(--light-blue);
     border-radius: 10px;
-    margin: 10px auto;
     line-height: 1.5em;
     padding: 0 30px 0 30px;
+    margin: 10px 0;
 
 }
 
@@ -163,13 +163,13 @@ jumbotron
 
 .big-box .box-img img{
     width: 100%;
-   margin: 0 auto;
+   margin-top: 40px;
 }
 
 .button-box{
     margin: 40px 5px;
-    text-align: center;
     background-color: var(--blue);
+    padding: 10px 50px;
 }
 
 #apple{
@@ -177,7 +177,6 @@ jumbotron
 }   
 
 #btn-box{
-    color: white;
     color: white;
 }
 
@@ -194,6 +193,37 @@ p{
     font-size: 75px;
     padding-top: 30px;
 }
+
+@media screen and (min-width: 768px) {
+    #jumbotron .row{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    #jumbotron .box{    
+        width: calc(100% / 3 - 30px);
+        margin: 15px 15px;
+
+    }
+    #jumbotron .big-box{
+        width: calc((100% / 3)* 2 - 30px);
+        margin: 15px 15px;
+    }
+    #jumbotron .big-box .box-img,
+    #jumbotron .big-box .box-text{
+        width: 50%;
+    }
+    
+}
+
+
+@media screen and (min-width: 992px) {
+    .big-box .box-img,
+    .big-box{
+        display: flex;
+    }
+}
+
 /*
 ++++++++++++++++++
 strategic planning
